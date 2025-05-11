@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Movement : MonoBehaviour
 {
@@ -25,7 +26,7 @@ public class Movement : MonoBehaviour
     {
         if (collision.collider.tag == "Obstacle")
         {
-            Debug.Log("obstacle");
+            SceneManager.LoadScene(2);
         }
     }
 }

@@ -22,5 +22,10 @@ public class ObstacleSpawner : MonoBehaviour
         }
 
         timer += Time.deltaTime;
+
+        if (Score.score == 20)
+        {
+            spawnTime = 1f;
+        }
     }
 }
